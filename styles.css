@@ -198,9 +198,9 @@ section { padding: clamp(60px, 8vw, 110px) 0; }
   margin-left: 2px;
 }
 .logo-img {
-  height: 56px;
+  height: 60px;
   width: auto;
-  max-width: 220px;
+  max-width: 240px;
   display: block;
   object-fit: contain;
   transition: transform .25s var(--ease);
@@ -1097,11 +1097,11 @@ section { padding: clamp(60px, 8vw, 110px) 0; }
 }
 
 @media (max-width: 820px) {
-  .logo-img { height: 44px; }
+  .logo-img { height: 48px; }
   .logo { padding: 2px 4px; }
   .nav-menu {
     position: fixed;
-    top: 78px;
+    top: 82px;
     left: 0; right: 0;
     background: var(--white);
     border-top: 1px solid var(--gray-100);
