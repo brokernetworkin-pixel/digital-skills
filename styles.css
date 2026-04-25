@@ -177,7 +177,7 @@ section { padding: clamp(60px, 8vw, 110px) 0; }
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 14px 0;
+  padding: 18px 0;
 }
 .logo {
   font-family: var(--serif);
@@ -188,7 +188,6 @@ section { padding: clamp(60px, 8vw, 110px) 0; }
   display: inline-flex;
   align-items: center;
   line-height: 0;
-  padding: 4px 6px;
 }
 .logo-accent {
   background: var(--gold-grad);
@@ -198,9 +197,9 @@ section { padding: clamp(60px, 8vw, 110px) 0; }
   margin-left: 2px;
 }
 .logo-img {
-  height: 60px;
+  height: 50px;
   width: auto;
-  max-width: 240px;
+  max-width: 200px;
   display: block;
   object-fit: contain;
   transition: transform .25s var(--ease);
@@ -1097,11 +1096,9 @@ section { padding: clamp(60px, 8vw, 110px) 0; }
 }
 
 @media (max-width: 820px) {
-  .logo-img { height: 48px; }
-  .logo { padding: 2px 4px; }
   .nav-menu {
     position: fixed;
-    top: 82px;
+    top: 86px;
     left: 0; right: 0;
     background: var(--white);
     border-top: 1px solid var(--gray-100);
@@ -1159,6 +1156,12 @@ section { padding: clamp(60px, 8vw, 110px) 0; }
   }
   .batches-table td:last-child::before { content: ''; }
   .batches-table td:last-child { justify-content: flex-end; }
+}
+
+@media (max-width: 768px) {
+  .logo-img { height: 40px; max-width: 150px; }
+  .nav-container { padding: 14px 0; }
+  .nav-menu { top: 72px; }
 }
 
 @media (max-width: 560px) {
