@@ -758,31 +758,67 @@ section { padding: clamp(60px, 8vw, 110px) 0; }
   transform: translateY(-2px);
 }
 
-/* ---------- Partners ---------- */
-.partners { padding-bottom: clamp(40px, 6vw, 80px); }
-.partners-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 16px;
-  max-width: 980px;
-  margin: 0 auto;
+/* ---------- Tools ---------- */
+.tools {
+  background: #F8F8F8;
+  padding: 100px 0;
 }
-.partner-logo {
-  padding: 22px 14px;
+.tools-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-bottom: 32px;
+}
+.tools-row {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.tools-label {
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #D4A24C;
+}
+.tools-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.tool-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 999px;
+  padding: 10px 20px;
+  font-size: .9rem;
+  color: #0A1F44;
+  font-weight: 500;
+  cursor: default;
+  transition: border-color .22s ease, transform .22s ease, box-shadow .22s ease;
+}
+.tool-badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #D4A24C;
+  flex-shrink: 0;
+}
+.tool-badge:hover {
+  border-color: #D4A24C;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(212, 162, 76, .2);
+}
+.tools-note {
   text-align: center;
-  font-family: var(--serif);
-  font-weight: 600;
-  font-size: 1.05rem;
-  color: var(--gray-500);
-  background: var(--white);
-  border: 1px solid var(--gray-100);
-  border-radius: var(--radius-md);
-  transition: color .25s var(--ease), border-color .25s var(--ease), transform .25s var(--ease);
-}
-.partner-logo:hover {
-  color: var(--navy);
-  border-color: var(--gold-soft);
-  transform: translateY(-3px);
+  font-size: .92rem;
+  color: #6B7384;
+  font-style: italic;
+  margin: 0;
 }
 
 /* ---------- Batches table ---------- */
