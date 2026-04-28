@@ -586,34 +586,29 @@ section { padding: clamp(60px, 8vw, 110px) 0; }
 .faq-accordion .accordion-panel > p { padding-left: 26px; }
 
 /* ---------- Pricing ---------- */
-.pricing { background: var(--white); }
+.pricing {
+  background: #F8F8F8;
+  padding: 100px 0;
+}
 .pricing-wrapper {
   display: flex;
   justify-content: center;
 }
 .pricing-card {
-  position: relative;
-  background: var(--white);
-  border: 1.5px solid var(--gold-soft);
+  background: #ffffff;
+  border: 2px solid #D4A24C;
   border-radius: 24px;
-  padding: clamp(32px, 5vw, 52px) clamp(28px, 5vw, 48px);
-  max-width: 600px;
+  padding: 48px;
+  max-width: 580px;
   width: 100%;
-  box-shadow: 0 20px 60px rgba(212, 162, 76, .12), var(--shadow-md);
+  margin: 0 auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
   text-align: center;
-  overflow: hidden;
-}
-.pricing-card::before {
-  content: '';
-  position: absolute;
-  inset: 0 0 auto 0;
-  height: 4px;
-  background: var(--gold-grad);
 }
 .pricing-badge {
   display: inline-block;
-  background: var(--gold-grad);
-  color: var(--navy);
+  background: #D4A24C;
+  color: #ffffff;
   font-size: .75rem;
   font-weight: 700;
   letter-spacing: .1em;
@@ -624,39 +619,36 @@ section { padding: clamp(60px, 8vw, 110px) 0; }
 }
 .pricing-title {
   font-size: 1.45rem;
-  color: var(--navy);
-  margin-bottom: 20px;
+  color: #0A1F44;
+  margin-bottom: 16px;
 }
 .pricing-price {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 .pricing-price strong {
   display: block;
-  font-family: var(--serif);
-  font-size: 3.6rem;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 3rem;
   font-weight: 700;
-  background: var(--gold-grad);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #D4A24C;
   line-height: 1;
   margin-bottom: 6px;
 }
 .pricing-price span {
   font-size: .95rem;
-  color: var(--gray-500);
+  color: #6B7384;
 }
 .pricing-subtitle {
   font-size: .95rem;
-  color: var(--gray-500);
+  color: #6B7384;
   margin: 10px 0 24px;
   padding-bottom: 24px;
-  border-bottom: 1px dashed var(--gray-200);
+  border-bottom: 1px dashed #D9DEE7;
 }
 .pricing-features {
   text-align: left;
   display: grid;
-  gap: 13px;
+  gap: 14px;
   margin-bottom: 32px;
 }
 .pricing-features li {
@@ -664,17 +656,37 @@ section { padding: clamp(60px, 8vw, 110px) 0; }
   align-items: center;
   gap: 12px;
   font-size: .98rem;
-  color: var(--gray-700);
+  color: #3A3F4B;
 }
 .pricing-features i {
-  color: var(--gold-deep);
-  font-size: 1.1rem;
+  color: #D4A24C;
+  font-size: 1.15rem;
   flex-shrink: 0;
 }
 .pricing-note {
   margin-top: 14px;
   font-size: .85rem;
-  color: var(--gray-500);
+  color: #6B7384;
+}
+
+/* Pricing CTA overrides */
+.pricing-card .btn-gold {
+  background: #D4A24C;
+  color: #0A1F44;
+  border-radius: 999px;
+  padding: 18px 32px;
+  font-weight: 700;
+  font-size: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(212, 162, 76, 0.35);
+}
+.pricing-card .btn-gold:hover {
+  background: #c4922e;
+  color: #0A1F44;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(212, 162, 76, 0.45);
 }
 
 /* ---------- Trainers ---------- */
