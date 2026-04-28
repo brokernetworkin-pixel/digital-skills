@@ -131,12 +131,12 @@
       const phone = form.phone.value.trim();
       const email = form.email.value.trim();
       const course = form.course.value.trim();
-      const batch = form.batch.value.trim();
+      const source = form.source.value.trim();
 
       const message =
         `Hi, I would like to book a free demo class. ` +
         `Name: ${name}, Phone: ${phone}, Email: ${email}, ` +
-        `Course Interest: ${course}, Preferred Batch: ${batch}`;
+        `Interest: ${course}, Heard via: ${source}`;
 
       const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
