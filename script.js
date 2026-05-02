@@ -140,8 +140,8 @@
 
       const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
-      // Fire-and-forget — save lead to Google Sheets before opening WhatsApp
-      fetch('https://script.google.com/macros/s/AKfycbyM3dmviXi2CU0_8KpsgtEsxrDEvlTu-sDh-mAVKFIWiPBE9joXNeP3_7w4EpW5RiQecg/exec', {
+      // Fire-and-forget — save lead via PHP handler (email + Google Sheets)
+      fetch('https://digitalskills.digital/form-handler.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -149,9 +149,8 @@
           phone:  phone,
           email:  email,
           course: course,
-          source: 'Website Form'
-        }),
-        mode: 'no-cors'
+          source: source
+        })
       });
 
       const btn = form.querySelector('button[type="submit"]');
