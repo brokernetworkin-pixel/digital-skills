@@ -1,0 +1,17 @@
+{
+  "name": "digital-skills",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Digital Skills marketing site",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui"
+  },
+  "devDependencies": {
+    "@vitest/ui": "^2.1.8",
+    "jsdom": "^25.0.1",
+    "vitest": "^2.1.8"
+  }
+}
